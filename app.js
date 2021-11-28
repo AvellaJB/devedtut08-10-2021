@@ -16,6 +16,17 @@ let tl2= gsap.timeline({
     },
 });
 
+
+
+let tlsquare= gsap.timeline({
+    scrollTrigger: {
+        trigger: ".home", //What element triggers the animation (in the case home, so instant trigger)
+        start: "0%", //50% would start the animation once we've scrolled 50 of the page
+        end : "100%", //We want the animation to end once we've reached the end to the page
+        scrub: 1, //Takes 1 second to catch up to the scroll bar.
+    },
+});
+
 let tlpinpage= gsap.timeline({
     scrollTrigger: {
         trigger: ".home", //What element triggers the animation (in the case home, so instant trigger)
@@ -27,8 +38,11 @@ let tlpinpage= gsap.timeline({
     },
 });
 
+//On met le pin all the way to the bottom parce que pour weird reasons ça fuck up l'anima du square. 
+
 tlslidingtext.fromTo(".sliding-text", {y: 0}, {y: -400})
 tl2.fromTo(".logo", {scale: 6}, {scale: 1, top : "2rem", left: "3rem", x:"50%", y:"50%"})
+tlsquare.fromTo('.square', {left: "70%"}, {left: "100%", opacity: "0", rotation: "90"})
 
 //tl.to(".logo", {opacity:0}); //D'abord animation sliding text, puis disparition onestep design.
 

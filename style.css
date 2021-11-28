@@ -59,3 +59,12 @@ a {
 .first-page img {
   height: 100%;
 }
+
+.square {
+  width: 10rem;
+  height: 10rem;
+  background: lightseagreen;
+  position: absolute;
+  top: 70%;
+  left: 70%;
+}
