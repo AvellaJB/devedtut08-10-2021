@@ -3,3 +3,59 @@
   padding: 0;
   box-sizing: border-box;
 }
+
+body {
+  font-family: "Heebo", sans-serif;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 5 rem;
+  background: white;
+}
+
+h2 {
+  font-size: 5rem;
+}
+
+ul {
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: black;
+  margin-left: 5rem;
+}
+
+.logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  font-size: 1.5rem;
+  transform: translate(-50%, -50%) scale(6);
+  /*transforme translate permet de centrer onestep design
+  car le top et left centrent uniquement le début de O de onestep
+  et nous on veux que ce soit le text entier qui est centré*/
+}
+
+.first-page {
+  height: 100vh;
+  background: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.home {
+  height: 100vh;
+}
+
+.first-page img {
+  height: 100%;
+}
