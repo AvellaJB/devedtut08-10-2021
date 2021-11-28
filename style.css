@@ -11,7 +11,7 @@ body {
 nav {
   display: flex;
   justify-content: space-between;
-  padding: 1rem 5 rem;
+  padding: 1rem 5rem;
   background: white;
 }
 
